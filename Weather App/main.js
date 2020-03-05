@@ -1,8 +1,8 @@
 //weather app project for CSY1018
 // Select elements using DOM events .querySelector
-const iconElement = document.querySelector(".weather-icon");
-const tempElement = document.querySelector(".temperature-value p");
-const descElement = document.querySelector(".temperature-description p");
+const iconElement = document.querySelector(".weatherIcon");
+const tempElement = document.querySelector(".temperatureVal p");
+const descElement = document.querySelector(".temperatureDesc p");
 const locationElement = document.querySelector(".location p");
 const notificationElement = document.querySelector(".notification");
 

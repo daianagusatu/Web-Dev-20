@@ -4,19 +4,17 @@
 
 body{
     margin-top: 100px;
-    background-color: #293251;
+    background-color: #633675;
 }
 p {
     margin-top: 15px;
 }
 
-.container{
+.containerApp{
     width: 300px;    
     background-color: #FFF;
-    
     display: block;
     margin: 0 auto;
-    
     border-radius: 10px;
     padding-bottom : 50px;
 }
@@ -48,28 +46,28 @@ p {
     padding: 10px 0;
 }
 
-.weather-container{
+.weatherContainer{
     width: 300px;
     height: 260px;
-    background-color: #F4F9FF;
+    background-color: rgba(244, 249, 255, 0.856);
 }
 
-.weather-icon{
+.weatherIcon{
     width: 300px;
     height: 128px;
 }
 
-.weather-icon img{
+.weatherIcon img{
     display: block;
     margin: 0 auto;
 }
 
-.temperature-value{
+.temperatureVal{
     width: 300px;
     height:60px;
 }
 
-.temperature-value p{
+.temperatureVal p{
     padding: 0;
     margin: 0;
     color: #293251;
@@ -78,12 +76,12 @@ p {
     cursor: pointer;
 }
 
-.temperature-value span{
+.temperatureVal span{
     color: #293251;
     font-size: 0.5em;
 }
 
-.temperature-description p {
+.temperatureDesc p {
     padding: 22px;
     margin: 0;
     color: #293251;
