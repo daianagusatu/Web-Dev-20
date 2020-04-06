@@ -1,0 +1,60 @@
+html, body {
+    background-color: #000000;
+    height: 100%;
+    margin: 0;
+  }
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  .light {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.2);
+    position: relative;
+  }
+  .light::after {
+    position: absolute;
+    top: 50%;
+    left: -20%;
+    transform: translatey(-50);
+    content: "";
+    width: 20%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #1a5761 80%, #520661 100%);
+    animation: move 6s infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
+  }
+  .light:nth-child(1)::after {
+    animation-delay: 1.4s;
+  }
+  .light:nth-child(2)::after {
+    animation-delay: 0;
+  }
+  .light:nth-child(3)::after {
+    animation-delay: 2s;
+  }
+  .light:nth-child(4)::after {
+    animation-delay: 0.8s;
+  }
+  .light:nth-child(5)::after {
+    animation-delay: 0.2s;
+  }
+  @keyframes move {
+    0% {
+      left: -20%;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+  
